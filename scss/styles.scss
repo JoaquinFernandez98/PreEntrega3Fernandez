@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
-    margin: 0%;
-    padding: 0%;
-    border: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -11,6 +13,8 @@ header{
 
 body{
     background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .nav-link{
@@ -61,36 +65,7 @@ main p{
     text-align: justify;
 }
 
-#dondeJuega{
-    grid-area: dondeJuega;
-    background-color: rgb(10, 10, 103);
-    margin-left: 30px;
-    margin-right: 50px;
-    
-}
-#img10{
-    grid-area: img10;
-    display: flex;
-    margin-right: 50px;
-}
-
-.perfiles{
-    width: 100%;
-    height: 550px;
-}
-
-#imgPerfiles{
-    grid-area: imgPerfiles;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    
-}
-
-.mapa{
- width: 75%;
-}
+/*Contenido Index*/
 
 #cuerpoIndex{
     margin-top: 100px;
@@ -108,7 +83,254 @@ main p{
     grid-column-gap: 50px;
     grid-row-gap: 50px;
 
+    #dondeJuega{
+        grid-area: dondeJuega;
+        background-color: rgb(10, 10, 103);
+        margin-left: 30px;
+        margin-right: 50px;
+        
+    }
+    #img10{
+        grid-area: img10;
+        display: flex;
+        margin-right: 50px;
+    }
+    
+    .perfiles{
+        width: 90%;
+        height: 350px;
+    }
+    
+    #imgPerfiles{
+        grid-area: imgPerfiles;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+    
+    #imgPerfiles:hover::before{
+        transform: scale(50%);
+    }
+    .mapa{
+     width: 75%;
+    }
+    
 }
+
+#cuerpoPele{
+    margin-top: 100px;
+    margin-left: 25px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " titlePele peleCopas"
+        " titlePele peleCopas"
+        " vidaPele vidaPele"
+        " videoPele videoPele"
+        " estadisticasPele estadisticasPele";
+
+        grid-template-rows: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+
+    #titlePele{
+        grid-area: titlePele;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(33, 5, 67);
+    }  
+
+    #peleCopas{
+        grid-area: peleCopas;
+        justify-content: center;
+        align-content: center;
+    }  
+    
+    .imgPele{
+        height: 350px;
+    }
+
+    #vidaPele{
+        grid-area: vidaPele;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-right: 30px;
+    }  
+    
+    #videoPele{
+        grid-area: videoPele;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }  
+
+
+    #estadisticasPele{
+        grid-area: estadisticasPele;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 8px;
+    }  
+
+    table{
+        width: 50%;
+        background-color: rgb(33, 5, 67);
+        text-align: left;
+        color: rgb(184, 245, 50);
+    }  
+}    
+
+#cuerpoDiego{
+    margin-top: 100px;
+    margin-left: 75px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " titleDiego diegoCopas"
+        " titleDiego diegoCopas"
+        " vidaDiego vidaDiego"
+        " videoDiego videoDiego"
+        " estadisticasDiego estadisticasDiego";
+
+        grid-template-rows: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+
+    #titleDiego{
+        grid-area: titleDiego;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(87, 216, 225);
+    }  
+
+    #diegoCopas{
+        grid-area: diegoCopas;
+        justify-content: center;
+        align-content: center;
+    }  
+    
+    .imgDiego{
+        height: 350px;
+    }
+
+    #vidaDiego{
+        grid-area: vidaDiego;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-right: 30px;
+    }  
+    
+    #videoDiego{
+        grid-area: videoDiego;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }  
+
+
+    #estadisticasDiego{
+        grid-area: estadisticasDiego;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 8px;
+    }  
+
+    table{
+        width: 50%;
+        background-color: rgb(87, 216, 225);
+        text-align: left;
+        color: rgb(27, 28, 24);
+    }  
+}    
+
+#cuerpoMessi{
+    margin-top: 100px;
+    margin-left: 75px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " titleMessi messiCopas"
+        " titleMessi messiCopas"
+        " vidaMessi vidaMessi"
+        " videoMessi videoMessi"
+        " estadisticasMessi estadisticasMessi";
+
+        grid-template-rows: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+
+    #titleMessi{
+        grid-area: titleMessi;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(87, 216, 225);
+    }  
+
+    #messiCopas{
+        grid-area: messiCopas;
+        justify-content: center;
+        align-content: center;
+    }  
+    
+    .imgMessi{
+        height: 350px;
+        width: 90%;
+    }
+
+    #vidaMessi{
+        grid-area: vidaMessi;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-right: 30px;
+    }  
+    
+    #videoMessi{
+        grid-area: videoMessi;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }  
+
+
+    #estadisticasMessi{
+        grid-area: estadisticasMessi;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-left: 8px;
+        flex-direction: column;
+    }  
+
+    table{
+        width: 50%;
+        background-color: rgb(87, 216, 225);
+        text-align: left;
+        color: rgb(27, 28, 24);
+    }  
+}    
 
 
 /*Responsive*/
@@ -121,7 +343,7 @@ main p{
     #imgPerfiles{
         flex-direction: column;
         justify-content: flex-end;
-        width: 90%;
+        width: 70%;
 
     }
     #cuerpoIndex{
@@ -137,5 +359,58 @@ main p{
             grid-template-rows: 1fr;  
             grid-template-columns: 1fr;
     
+    }
+    #cuerpoPele{
+        display: grid;
+        grid-template-areas:
+           " titlePele"
+           " peleCopas"
+           " vidaPele"
+           " videoPele"
+           " estadisticasPele";
+
+            
+        grid-template-columns: 300px;
+    }
+
+    .imgPele{
+        width: 100%;
+        
+    }
+
+    #cuerpoDiego{
+        display: grid;
+        grid-template-areas:
+           " titleDiego"
+           " diegoCopas"
+           " vidaDiego"
+           " videoDiego"
+           " estadisticasDiego";
+
+            
+        grid-template-columns: 300px;
+    }
+
+    .imgDiego{
+        width: 100%;
+        
+    }
+
+    #cuerpoMessi{
+        display: grid;
+        grid-template-areas:
+           " titleMessi"
+           " messiCopas"
+           " vidaMessi"
+           " videoMessi"
+           " estadisticasMessi";
+
+            
+        grid-template-columns: 300px;
+    }
+
+    .imgMessi{
+        width: 100%;
+        
     }
 }

@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
-  margin: 0%;
-  padding: 0%;
-  border: 0%; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 header {
   max-width: 100%;
   width: 100%; }
 
 body {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif; }
 
 .nav-link {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -48,31 +50,7 @@ main p {
   color: #b5b4b4;
   text-align: justify; }
 
-#dondeJuega {
-  grid-area: dondeJuega;
-  background-color: #0a0a67;
-  margin-left: 30px;
-  margin-right: 50px; }
-
-#img10 {
-  grid-area: img10;
-  display: flex;
-  margin-right: 50px; }
-
-.perfiles {
-  width: 100%;
-  height: 550px; }
-
-#imgPerfiles {
-  grid-area: imgPerfiles;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px; }
-
-.mapa {
-  width: 75%; }
-
+/*Contenido Index*/
 #cuerpoIndex {
   margin-top: 100px;
   margin-left: 75px;
@@ -82,6 +60,169 @@ main p {
   grid-template-columns: 1fr 1fr auto;
   grid-column-gap: 50px;
   grid-row-gap: 50px; }
+  #cuerpoIndex #dondeJuega {
+    grid-area: dondeJuega;
+    background-color: #0a0a67;
+    margin-left: 30px;
+    margin-right: 50px; }
+  #cuerpoIndex #img10 {
+    grid-area: img10;
+    display: flex;
+    margin-right: 50px; }
+  #cuerpoIndex .perfiles {
+    width: 90%;
+    height: 350px; }
+  #cuerpoIndex #imgPerfiles {
+    grid-area: imgPerfiles;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  #cuerpoIndex #imgPerfiles:hover::before {
+    transform: scale(50%); }
+  #cuerpoIndex .mapa {
+    width: 75%; }
+
+#cuerpoPele {
+  margin-top: 100px;
+  margin-left: 25px;
+  display: grid;
+  grid-template-areas: " titlePele peleCopas" " titlePele peleCopas" " vidaPele vidaPele" " videoPele videoPele" " estadisticasPele estadisticasPele";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px; }
+  #cuerpoPele #titlePele {
+    grid-area: titlePele;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #210543; }
+  #cuerpoPele #peleCopas {
+    grid-area: peleCopas;
+    justify-content: center;
+    align-content: center; }
+  #cuerpoPele .imgPele {
+    height: 350px; }
+  #cuerpoPele #vidaPele {
+    grid-area: vidaPele;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-right: 30px; }
+  #cuerpoPele #videoPele {
+    grid-area: videoPele;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  #cuerpoPele #estadisticasPele {
+    grid-area: estadisticasPele;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 8px; }
+  #cuerpoPele table {
+    width: 50%;
+    background-color: #210543;
+    text-align: left;
+    color: #b8f532; }
+
+#cuerpoDiego {
+  margin-top: 100px;
+  margin-left: 75px;
+  display: grid;
+  grid-template-areas: " titleDiego diegoCopas" " titleDiego diegoCopas" " vidaDiego vidaDiego" " videoDiego videoDiego" " estadisticasDiego estadisticasDiego";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px; }
+  #cuerpoDiego #titleDiego {
+    grid-area: titleDiego;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #57d8e1; }
+  #cuerpoDiego #diegoCopas {
+    grid-area: diegoCopas;
+    justify-content: center;
+    align-content: center; }
+  #cuerpoDiego .imgDiego {
+    height: 350px; }
+  #cuerpoDiego #vidaDiego {
+    grid-area: vidaDiego;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-right: 30px; }
+  #cuerpoDiego #videoDiego {
+    grid-area: videoDiego;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  #cuerpoDiego #estadisticasDiego {
+    grid-area: estadisticasDiego;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 8px; }
+  #cuerpoDiego table {
+    width: 50%;
+    background-color: #57d8e1;
+    text-align: left;
+    color: #1b1c18; }
+
+#cuerpoMessi {
+  margin-top: 100px;
+  margin-left: 75px;
+  display: grid;
+  grid-template-areas: " titleMessi messiCopas" " titleMessi messiCopas" " vidaMessi vidaMessi" " videoMessi videoMessi" " estadisticasMessi estadisticasMessi";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px; }
+  #cuerpoMessi #titleMessi {
+    grid-area: titleMessi;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #57d8e1; }
+  #cuerpoMessi #messiCopas {
+    grid-area: messiCopas;
+    justify-content: center;
+    align-content: center; }
+  #cuerpoMessi .imgMessi {
+    height: 350px;
+    width: 90%; }
+  #cuerpoMessi #vidaMessi {
+    grid-area: vidaMessi;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-right: 30px; }
+  #cuerpoMessi #videoMessi {
+    grid-area: videoMessi;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  #cuerpoMessi #estadisticasMessi {
+    grid-area: estadisticasMessi;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: 8px;
+    flex-direction: column; }
+  #cuerpoMessi table {
+    width: 50%;
+    background-color: #57d8e1;
+    text-align: left;
+    color: #1b1c18; }
 
 /*Responsive*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -90,9 +231,27 @@ main p {
   #imgPerfiles {
     flex-direction: column;
     justify-content: flex-end;
-    width: 90%; }
+    width: 70%; }
   #cuerpoIndex {
     display: grid;
     grid-template-areas: " queEs queEs" " img10 img10" " dondeJuega dondeJuega" " imgPerfiles imgPerfiles" " imgPerfiles imgPerfiles" " imgPerfiles imgPerfiles";
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #cuerpoPele {
+    display: grid;
+    grid-template-areas: " titlePele" " peleCopas" " vidaPele" " videoPele" " estadisticasPele";
+    grid-template-columns: 300px; }
+  .imgPele {
+    width: 100%; }
+  #cuerpoDiego {
+    display: grid;
+    grid-template-areas: " titleDiego" " diegoCopas" " vidaDiego" " videoDiego" " estadisticasDiego";
+    grid-template-columns: 300px; }
+  .imgDiego {
+    width: 100%; }
+  #cuerpoMessi {
+    display: grid;
+    grid-template-areas: " titleMessi" " messiCopas" " vidaMessi" " videoMessi" " estadisticasMessi";
+    grid-template-columns: 300px; }
+  .imgMessi {
+    width: 100%; } }
