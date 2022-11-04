@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+header{
+    max-width: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #f0f0f0;
+
+}
+.nav-link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(210, 210, 210);
+    font-size: 25px;
+}
+
+.logo10{
+    height: 90px;
+}
+
+.iconoRedes{
+    height: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h2{
+    font-size: 20px;
+}
+
+.redesSociales{
+    display: flex;
+    align-items: flex-end center;
+}
+main{
+    
+    width: 100%;
+    
+}
+
+main h2{
+    color: coral;
+    margin-bottom: 15px;
+
+}
+main p{
+    display: flex;
+    justify-content: center;
+    color: rgb(181, 180, 180);
+
+}
+
+#dondeJuega{
+    grid-area: dondeJuega;
+    background-color: rgb(10, 10, 103);
+    margin-left: 30px;
+    margin-right: 50px;
+    
+}
+#img10{
+    grid-area: img10;
+    display: flex;
+    margin-right: 50px;
+}
+
+.perfiles{
+    width: 100%;
+    height: 550px;
+}
+
+#imgPerfiles{
+    grid-area: imgPerfiles;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.mapa{
+ width: 75%;
+}
+
+#cuerpoIndex{
+    margin-top: 100px;
+    margin-left: 75px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " queEs img10"
+        " dondeJuega dondeJuega"
+        " imgPerfiles imgPerfiles";
+
+    grid-template-rows: 3fr 1fr auto;  
+    grid-template-columns: 1fr 1fr auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+}
+
+
+/*Responsive*/
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    
+    #dondeJuega{
+        margin-left: 0%;
+    }
+    #imgPerfiles{
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 90%;
+
+    }
+    #cuerpoIndex{
+        display: grid;
+        grid-template-areas:
+            " queEs queEs"
+            " img10 img10"
+            " dondeJuega dondeJuega"
+            " imgPerfiles imgPerfiles"
+            " imgPerfiles imgPerfiles"
+            " imgPerfiles imgPerfiles";
+
+            grid-template-rows: 1fr;  
+            grid-template-columns: 1fr;
+    
+    }
+}
