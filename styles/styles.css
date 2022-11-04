@@ -8,7 +8,7 @@ header {
   width: 100%; }
 
 body {
-  background-color: #f0f0f0; }
+  background-color: #fafafa; }
 
 .nav-link {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -41,12 +41,12 @@ main {
 
 main h2 {
   color: coral;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-left: 15px; }
 
 main p {
-  display: flex;
-  justify-content: center;
-  color: #b5b4b4; }
+  color: #b5b4b4;
+  text-align: justify; }
 
 #dondeJuega {
   grid-area: dondeJuega;

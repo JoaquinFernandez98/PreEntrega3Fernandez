@@ -10,9 +10,9 @@ header{
 }
 
 body{
-    background-color: #f0f0f0;
-
+    background-color: #fafafa;
 }
+
 .nav-link{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(210, 210, 210);
@@ -52,13 +52,13 @@ main{
 main h2{
     color: coral;
     margin-bottom: 15px;
-
+    margin-left: 15px;
+    
 }
 main p{
-    display: flex;
-    justify-content: center;
+    
     color: rgb(181, 180, 180);
-
+    text-align: justify;
 }
 
 #dondeJuega{
