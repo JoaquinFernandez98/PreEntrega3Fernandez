@@ -47,10 +47,44 @@ main h2 {
   margin-left: 15px; }
 
 main p {
-  color: #b5b4b4;
+  color: #777777;
   text-align: justify; }
 
-/*Contenido Index*/
+/*------------Contenido Index------------*/
+.containerTituloEmoji {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.emoji {
+  font-size: 3rem; }
+
+.emoji:hover {
+  animation: agitar 0.5s; }
+
+@keyframes agitar {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  90% {
+    transform: translate(-1px, 2px) rotate(-1deg); } }
+
 #cuerpoIndex {
   margin-top: 100px;
   margin-left: 75px;
@@ -82,11 +116,13 @@ main p {
   #cuerpoIndex #imgPerfiles:hover::before {
     transform: scale(50%); }
   #cuerpoIndex .mapa {
-    width: 75%; }
+    width: 75%;
+    height: 800px; }
 
+/*-------------Contenido Pele---------------*/
 #cuerpoPele {
   margin-top: 100px;
-  margin-left: 25px;
+  margin-left: 75px;
   display: grid;
   grid-template-areas: " titlePele peleCopas" " titlePele peleCopas" " vidaPele vidaPele" " videoPele videoPele" " estadisticasPele estadisticasPele";
   grid-template-rows: 1fr 1fr 1fr;
@@ -130,6 +166,7 @@ main p {
     text-align: left;
     color: #b8f532; }
 
+/*--------------Contenido Diego-------------*/
 #cuerpoDiego {
   margin-top: 100px;
   margin-left: 75px;
@@ -176,6 +213,7 @@ main p {
     text-align: left;
     color: #1b1c18; }
 
+/*---------------Contenido Messi---------------*/
 #cuerpoMessi {
   margin-top: 100px;
   margin-left: 75px;
@@ -191,14 +229,14 @@ main p {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #57d8e1; }
+    background-color: #240756; }
   #cuerpoMessi #messiCopas {
     grid-area: messiCopas;
     justify-content: center;
     align-content: center; }
   #cuerpoMessi .imgMessi {
     height: 350px;
-    width: 90%; }
+    width: 70%; }
   #cuerpoMessi #vidaMessi {
     grid-area: vidaMessi;
     display: flex;
@@ -220,11 +258,172 @@ main p {
     flex-direction: column; }
   #cuerpoMessi table {
     width: 50%;
-    background-color: #57d8e1;
+    background-color: #240756;
     text-align: left;
-    color: #1b1c18; }
+    color: #ef1717; }
 
-/*Responsive*/
+/*------------Jugadores retirados------------*/
+#cuerpoRetirados {
+  margin-top: 100px;
+  display: grid;
+  grid-template-areas: " comoEran comoEran" " jugRetirados jugRetirados" " jugRetirados jugRetirados";
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px; }
+  #cuerpoRetirados #comoEran {
+    grid-area: comoEran;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 10px; }
+  #cuerpoRetirados #10antes {
+    grid-area: 10antes;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #a5def7; }
+  #cuerpoRetirados #jugRetirados {
+    grid-area: jugRetirados;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #a5def7; }
+    #cuerpoRetirados #jugRetirados .zidane {
+      position: relative;
+      display: inline-block; }
+    #cuerpoRetirados #jugRetirados .zidane1 {
+      position: absolute;
+      top: 10px;
+      right: 50%;
+      font-size: 22px;
+      color: #0e0d0d; }
+    #cuerpoRetirados #jugRetirados .zidane2 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      font-size: 16px;
+      text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+      -webkit-text-fill-color: #0f0d0d;
+      -webkit-text-stroke: 1px #929191;
+      color: transparent; }
+    #cuerpoRetirados #jugRetirados .delPieroImg {
+      display: flex;
+      top: 50%; }
+    #cuerpoRetirados #jugRetirados .delPiero {
+      position: relative;
+      display: inline-block; }
+    #cuerpoRetirados #jugRetirados .delPiero1 {
+      position: absolute;
+      top: 10px;
+      right: 40%;
+      font-size: 22px;
+      color: #0e0d0d; }
+    #cuerpoRetirados #jugRetirados .delPiero2 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      font-size: 16px;
+      text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+      -webkit-text-fill-color: #0f0d0d;
+      -webkit-text-stroke: 1px #929191;
+      color: transparent; }
+    #cuerpoRetirados #jugRetirados .zico {
+      position: relative;
+      display: inline-block;
+      display: flex; }
+    #cuerpoRetirados #jugRetirados .zico1 {
+      position: absolute;
+      top: 10px;
+      right: 70%;
+      font-size: 22px;
+      color: #0e0d0d; }
+    #cuerpoRetirados #jugRetirados .zico2 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      font-size: 16px;
+      text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+      -webkit-text-fill-color: #0f0d0d;
+      -webkit-text-stroke: 1px #929191;
+      color: transparent; }
+    #cuerpoRetirados #jugRetirados .roman {
+      position: relative;
+      display: inline-block;
+      display: flex; }
+    #cuerpoRetirados #jugRetirados .roman1 {
+      position: absolute;
+      top: 10px;
+      right: 30%;
+      font-size: 22px;
+      color: #0e0d0d; }
+    #cuerpoRetirados #jugRetirados .roman2 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      font-size: 16px;
+      text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+      -webkit-text-fill-color: #0f0d0d;
+      -webkit-text-stroke: 1px #929191;
+      color: transparent; }
+    #cuerpoRetirados #jugRetirados .dinho {
+      position: relative;
+      display: inline-block;
+      display: flex; }
+    #cuerpoRetirados #jugRetirados .dinho1 {
+      position: absolute;
+      top: 10px;
+      right: 40%;
+      font-size: 22px;
+      color: #0e0d0d; }
+    #cuerpoRetirados #jugRetirados .dinho2 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      font-size: 16px;
+      text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+      -webkit-text-fill-color: #0f0d0d;
+      -webkit-text-stroke: 1px #929191;
+      color: transparent; }
+    #cuerpoRetirados #jugRetirados .baggio {
+      position: relative;
+      display: inline-block;
+      display: flex; }
+    #cuerpoRetirados #jugRetirados .baggio1 {
+      position: absolute;
+      top: 10px;
+      right: 50%;
+      font-size: 22px;
+      color: #0e0d0d; }
+    #cuerpoRetirados #jugRetirados .baggio2 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      font-size: 16px;
+      text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+      -webkit-text-fill-color: #0f0d0d;
+      -webkit-text-stroke: 1px #929191;
+      color: transparent; }
+
+/*------------Contacto-------------*/
+.containerContacto {
+  width: 30%;
+  margin-top: 25px;
+  margin-left: 35%;
+  border: 20px solid #ff6550;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+/*------------Responsive-------------*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   #dondeJuega {
     margin-left: 0%; }
@@ -254,4 +453,14 @@ main p {
     grid-template-areas: " titleMessi" " messiCopas" " vidaMessi" " videoMessi" " estadisticasMessi";
     grid-template-columns: 300px; }
   .imgMessi {
-    width: 100%; } }
+    width: 100%; }
+  #cuerpoRetirados {
+    margin-left: 10%;
+    max-width: 90%;
+    width: 65%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: " comoEran comoEran" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados"; }
+  .containerContacto {
+    width: 60%;
+    margin-left: 25%; } }
